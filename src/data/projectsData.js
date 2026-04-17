@@ -11,75 +11,39 @@ import eight from '../assets/svg/projects/eight.svg'
 export const projectsData = [
     {
         id: 1,
-        projectName: 'Employee Management',
-        projectDesc: 'This project aims to build an employee management system that consolidates all information of a company',
-        tags: ['React', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'NexusNU – Social Networking Website',
+        projectDesc: 'Full-stack MERN application with TypeScript scaling to 100+ active users. Features JWT authentication, RBAC, real-time job listings via JSearchAPI & ESCO, and CI/CD deployment on Netlify and Render with MongoDB Atlas.',
+        tags: ['React', 'Node JS', 'MongoDB', 'Typescript', 'JWT'],
+        code: '',
+        demo: 'https://nexusnu.netlify.app/',
         image: one
     },
     {
         id: 2,
-        projectName: 'Railway Tracking',
-        projectDesc: 'This project is a railway tracking system that allows users to obtain relevant information about train timing.',
-        tags: ['Django', 'Tailwind CSS'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'Motiv8 – Fitness Tracking Platform',
+        projectDesc: 'Microservices-based fitness platform using Spring Boot, event-driven architecture with RabbitMQ, service discovery via Eureka, and polyglot persistence (PostgreSQL, MongoDB). Containerized with Docker for scalable deployment.',
+        tags: ['Spring Boot', 'Docker', 'RabbitMQ', 'PostgreSQL', 'MongoDB'],
+        code: '',
+        demo: '',
         image: two
     },
     {
         id: 3,
-        projectName: 'Weather App',
-        projectDesc: 'Weather forecast systems and applications predict weather conditions based on multiple parameters.',
-        tags: ['Django', 'CSS', 'Material Ui'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'Kambaz – Learning Management System',
+        projectDesc: 'Full-stack LMS built with Next.js (TypeScript) and Node.js/Express. Supports RBAC for Student, Faculty, and Admin users. Features 20+ REST API endpoints, Redux Toolkit state management, and deployment on Vercel and Render.',
+        tags: ['Next JS', 'Typescript', 'Node JS', 'MongoDB', 'Redux'],
+        code: '',
+        demo: 'https://kambaz-next-js-cs5016-fall2025-a6-bhdyu94g5-addy-9595s-projects.vercel.app/Account/SignIn',
         image: three
     },
     {
         id: 4,
-        projectName: 'Android Patient Tracker',
-        projectDesc: 'This project involves the development of an Android application for viewing and managing patient data.',
-        tags: ['Flutter', 'Firebase'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
+        projectName: 'Enhancing Education through Generative AI',
+        projectDesc: 'AI-powered quiz generation system using LangChain and Google Gemini API to process 50+ educational PDFs and auto-generate 100+ MCQs, reducing manual creation time by 80%. Includes automated DSA flowchart generation with 95% diagram accuracy.',
+        tags: ['Python', 'LangChain', 'Gemini API', 'AI/ML'],
+        code: '',
+        demo: '',
         image: four
-    },
-    {
-        id: 5,
-        projectName: 'E-Commerce App',
-        projectDesc: 'A Simple E-commerce application',
-        tags: ['React Native', 'Firebase'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: five
-    },
-    {
-        id: 6,
-        projectName: 'Uber Lite',
-        projectDesc: 'Uber clone',
-        tags: ['Flutter'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: six
-    },
-    {
-        id: 7,
-        projectName: 'Stock Market App',
-        projectDesc: 'A simple stock market API app',
-        tags: ['React', 'Redux', 'Bootstrap'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: seven
-    },
-    {
-        id: 8,
-        projectName: 'Car Pooling System',
-        projectDesc: 'The carpooling system merges multiple people in a car which leads to meet new people, reduces pollution',
-        tags: ['Flutter', 'React'],
-        code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-        image: eight
     },
 ]
 

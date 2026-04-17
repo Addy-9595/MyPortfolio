@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
-import axios from 'axios';
+import emailjs from '@emailjs/browser';
 import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
 import {
@@ -134,21 +134,20 @@ function Contacts() {
 
         if (name && email && message) {
             if (isEmail(email)) {
-                const responseData = {
-                    name: name,
-                    email: email,
-                    message: message,
-                };
-
-                axios.post(contactsData.sheetAPI, responseData).then((res) => {
-                    console.log('success');
+                emailjs.send(
+                    'service_zvfqraf',
+                    'template_2j7whe4',
+                    { name: name, email: email, message: message, title: 'Portfolio Contact' },
+                    process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+                ).then(() => {
                     setSuccess(true);
                     setErrMsg('');
-
                     setName('');
                     setEmail('');
                     setMessage('');
-                    setOpen(false);
+                }).catch(() => {
+                    setErrMsg('Failed to send message. Please try again.');
+                    setOpen(true);
                 });
             } else {
                 setErrMsg('Invalid email');

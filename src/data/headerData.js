@@ -1,9 +1,9 @@
-import resume from '../assets/pdf/resume.pdf'
+import resume from '../assets/pdf/Atharva_Dalvi_NEU_Resume_2.pdf'
 
 export const headerData = {
-    name: 'Jane Doe',
-    title: "Web Developer",
-    desciption:"There wasn't a bird in the sky, but that was not what caught her attention. It was the clouds. The deep green that isn't the color of clouds, but came with these. She knew what was coming and she hoped she was prepared. ",
-    image: 'https://raw.githubusercontent.com/PhantomScript/asset-container/main/developer-portfolio/landingImg.png',
+    name: 'Atharva Dalvi',
+    title: "Software Engineer",
+    desciption: "MS Computer Science student at Northeastern University with a passion for building scalable full-stack applications. Experienced with microservices, cloud infrastructure, and AI-powered systems. Always exploring new technologies to solve real-world problems.",
+    image: '/images/photo.jpeg',
     resumePdf: resume
 }

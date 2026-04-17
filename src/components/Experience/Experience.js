@@ -19,13 +19,14 @@ function Experience() {
                  <div className="experience-description">
                     <h1 style={{color:theme.primary}}>Experience</h1>
                     {experienceData.map(exp =>(
-                        <ExperienceCard 
+                        <ExperienceCard
                             key={exp.id}
                             id={exp.id}
                             jobtitle={exp.jobtitle}
                             company={exp.company}
                             startYear={exp.startYear}
-                            endYear={exp.endYear}/>
+                            endYear={exp.endYear}
+                            bullets={exp.bullets}/>
                     ))}
                  </div>
              </div>

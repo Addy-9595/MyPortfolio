@@ -1,23 +1,20 @@
 export const educationData = [
     {
         id: 1,
-        institution: 'Marble Hills Middle School',
-        course: 'Higher Secondary Education',
-        startYear: '2007',
-        endYear: '2015'
+        institution: 'Fr. Conceicao Rodrigues College of Engineering',
+        course: 'Bachelor of Engineering in Computer Engineering',
+        startYear: '2021',
+        endYear: '2025',
+        gpa: '9.50 / 10.0',
+        location: 'Mumbai, India'
     },
     {
         id: 2,
-        institution: 'Somerset School of Science',
-        course: 'Bachelor of Technology',
-        startYear: '2015',
-        endYear: '2019'
-    },
-    {
-        id: 3,
-        institution: 'Hawking University, Cambridge',
-        course: 'Master of Technology',
-        startYear: '2019',
-        endYear: 'Present'
+        institution: 'Northeastern University, Khoury College of Computer Sciences',
+        course: 'Master of Science in Computer Science',
+        startYear: '2025',
+        endYear: 'Present',
+        gpa: '4.0 / 4.0',
+        location: 'Boston, MA'
     },
 ]

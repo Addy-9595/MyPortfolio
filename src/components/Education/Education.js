@@ -17,13 +17,15 @@ function Education() {
                 <div className="education-description">
                 <h1 style={{color:theme.primary}}>Education</h1>
                     {educationData.map(edu => (
-                        <EducationCard 
+                        <EducationCard
                             key={edu.id}
                             id={edu.id}
                             institution={edu.institution}
                             course={edu.course}
                             startYear={edu.startYear}
                             endYear={edu.endYear}
+                            gpa={edu.gpa}
+                            location={edu.location}
                         />
                     ))}
                 </div>
