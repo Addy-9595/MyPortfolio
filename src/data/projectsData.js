@@ -2,6 +2,7 @@ import one from '../assets/svg/projects/one.svg'
 import two from '../assets/svg/projects/two.svg'
 import three from '../assets/svg/projects/three.svg'
 import four from '../assets/svg/projects/four.svg'
+import five from '../assets/svg/projects/five.svg'
 
 
 export const projectsData = [
@@ -40,6 +41,15 @@ export const projectsData = [
         code: '',
         demo: '',
         image: four
+    },
+    {
+        id: 5,
+        projectName: 'Artory.ai – AI Storytelling Platform (MIT Sloan)',
+        projectDesc: 'Full-stack AI storytelling platform built with a TypeScript frontend and Supabase backend. Reduced AI story-generation latency by 51% (7,900ms to 3,900ms) via backend profiling and API optimization, delivered an end-to-end user-to-user gifting feature and secure forgot-password flow, and deployed 6 GCP Cloud Scheduler cron jobs on Cloud Run to automate gift lifecycle emails, subscription expiry, and data cleanup.',
+        tags: ['TypeScript', 'Supabase', 'GCP', 'Cloud Run', 'AI/ML'],
+        code: '',
+        demo: '',
+        image: five
     },
 ]
 
