@@ -14,7 +14,7 @@ export const educationData = [
         course: 'Master of Science in Computer Science',
         startYear: '2025',
         endYear: 'Present',
-        gpa: '4.0 / 4.0',
+        gpa: '3.5 / 4.0',
         location: 'Boston, MA'
     },
 ]

@@ -37,10 +37,6 @@
     transition: opacity 0.7s 0.3s;
 }
 
-.singleProject:hover img{
-    opacity: 0;
-}
-
 .project--showcaseBtn {
     display: flex;
     align-items: center;
@@ -59,27 +55,6 @@
 }
 
 
-.singleProject .project--desc{
-    position: absolute;
-    width: 95%;
-    height: 160px;
-    left: 0;
-    top: 0;
-    transform: translate(-110%,40%);
-    padding: 15px;
-    border-radius: 0 20px 20px 0;
-    transition: transform 0.9s;
-    line-height: 110%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--primaryFont);
-}
-  
-.singleProject:hover .project--desc{
-    transform: translate(-2%,40%);
-}
-  
 .singleProject .project--lang{
     position: absolute;
     bottom: 20px;

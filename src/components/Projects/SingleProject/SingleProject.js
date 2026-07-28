@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { FaPlay, FaCode } from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
@@ -6,7 +7,10 @@ import Fade from 'react-reveal/Fade';
 import placeholder from '../../../assets/png/placeholder.png';
 import './SingleProject.css';
 
-function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
+function SingleProject({ id, name, tags, code, demo, image, theme }) {
+    const history = useHistory();
+
+    const openDetail = () => history.push(`/projects/${id}`);
     const useStyles = makeStyles((t) => ({
         iconBtn: {
             display: 'flex',
@@ -44,11 +48,17 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                 <div className='projectContent'>
                     <h2
                         id={name.replace(' ', '-').toLowerCase()}
-                        style={{ color: theme.tertiary }}
+                        style={{ color: theme.tertiary, cursor: 'pointer' }}
+                        onClick={openDetail}
                     >
                         {name}
                     </h2>
-                    <img src={image ? image : placeholder} alt={name} />
+                    <img
+                        src={image ? image : placeholder}
+                        alt={name}
+                        style={{ cursor: 'pointer' }}
+                        onClick={openDetail}
+                    />
                     <div className='project--showcaseBtn'>
                         {demo ? (
                             <a
@@ -99,15 +109,6 @@ function SingleProject({ id, name, desc, tags, code, demo, image, theme }) {
                         </a>
                     </div>
                 </div>
-                <p
-                    className='project--desc'
-                    style={{
-                        background: theme.secondary,
-                        color: theme.tertiary,
-                    }}
-                >
-                    {desc}
-                </p>
                 <div
                     className='project--lang'
                     style={{

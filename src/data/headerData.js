@@ -1,4 +1,4 @@
-import resume from '../assets/pdf/Atharva_Dalvi_NEU_Resume_2.pdf'
+import resume from '../assets/pdf/Resume_NEU.pdf'
 
 export const headerData = {
     name: 'Atharva Dalvi',

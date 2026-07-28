@@ -1,0 +1,111 @@
+.projectDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.projectDetail-header {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.projectDetail-header > h1 {
+    font-size: 3rem;
+    font-family: var(--primaryFont);
+    text-align: center;
+    line-height: 1.15;
+}
+
+.projectDetail-container {
+    padding: 3rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.projectDetail-card {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 4px 4px 8px rgba(36, 3, 3, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.projectDetail-card > img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    margin-bottom: 1.75rem;
+}
+
+.projectDetail-desc {
+    font-family: var(--primaryFont);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.75rem;
+}
+
+.projectDetail-tags {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    margin-bottom: 1.75rem;
+}
+
+.projectDetail-tags > span {
+    font-family: var(--primaryFont);
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+}
+
+.projectDetail-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.projectDetail-btns > a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+    .projectDetail-header {
+        height: 25vh;
+    }
+    .projectDetail-header > h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .projectDetail-header > h1 {
+        font-size: 1.9rem;
+    }
+    .projectDetail-card {
+        padding: 1.5rem;
+    }
+    .projectDetail-desc {
+        font-size: 1rem;
+    }
+}
